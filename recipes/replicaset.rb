@@ -21,6 +21,14 @@
 
 node.normal['mongodb']['is_replicaset'] = true
 node.normal['mongodb']['cluster_name'] = node['mongodb']['cluster_name']
+node.normal['mongodb']['config'] = node['mongodb']['config']
+node.normal['mongodb']['use_ip_address'] = node['mongodb']['use_ip_address']
+node.normal['mongodb']['replica_arbiter_only'] = node['mongodb']['replica_arbiter_only']
+node.normal['mongodb']['replica_build_indexes'] = node['mongodb']['replica_build_indexes']
+node.normal['mongodb']['replica_slave_delay'] = node['mongodb']['replica_slave_delay']
+node.normal['mongodb']['replica_tags'] = node['mongodb']['replica_tags']
+node.normal['mongodb']['replica_votes'] = node['mongodb']['replica_votes']
+node.normal['mongodb']['replica_priority'] = node['mongodb']['replica_priority']
 
 include_recipe 'sc-mongodb::install'
 
